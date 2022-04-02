@@ -1,6 +1,6 @@
 <template>
   <!--begin::Toolbar-->
-  <div class="toolbar" id="kt_toolbar">
+  <div class="toolbar mb-10" id="kt_toolbar">
     <!--begin::Container-->
     <div
       id="kt_toolbar_container"

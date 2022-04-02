@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <KTHeader  />
-  </div>
+  <KTHeader />
   <router-view />
 </template>
 
@@ -17,7 +15,7 @@ export default defineComponent({
   name: "app",
   components: {
     KTHeader
-  },  
+  },
   setup() {
     const store = useStore();
 

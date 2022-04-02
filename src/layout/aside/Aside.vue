@@ -16,18 +16,21 @@
     data-kt-drawer-toggle="#kt_aside_mobile_toggle"
   >
     <!--begin::Brand-->
-    <div class="aside-logo flex-column-auto" id="kt_aside_logo">
-      <!--begin::Logo-->
-      <a href="#" v-if="asideTheme === 'dark'">
+    <!-- <div class="aside-logo flex-column-auto" id="kt_aside_logo"> -->
+    <!--begin::Logo-->
+
+    <!-- <a href="#" v-if="asideTheme === 'dark'">
         <img alt="Logo" :src="darkLogo" class="h-25px logo" />
       </a>
       <a href="#" v-if="asideTheme === 'light'">
         <img alt="Logo" :src="lightLogo" class="h-25px logo" />
-      </a>
-      <!--end::Logo-->
+      </a> -->
 
-      <!--begin::Aside toggler-->
-      <div
+    <!--end::Logo-->
+
+    <!--begin::Aside toggler-->
+
+    <!-- <div
         id="kt_aside_toggle"
         class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
         data-kt-toggle="true"
@@ -38,9 +41,10 @@
         <span class="svg-icon svg-icon-1 rotate-180">
           <inline-svg src="media/icons/duotune/arrows/arr080.svg" />
         </span>
-      </div>
-      <!--end::Aside toggler-->
-    </div>
+      </div> -->
+
+    <!--end::Aside toggler-->
+    <!-- </div> -->
     <!--end::Brand-->
 
     <!--begin::Aside menu-->

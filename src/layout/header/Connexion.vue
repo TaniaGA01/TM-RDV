@@ -18,24 +18,6 @@
       </div>
       <KTUserMenu></KTUserMenu>
       <!--end::Menu-->
-
-      <div class="create-btn">
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-primary btn-sm dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Créer
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Sondage d'opinion</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Sondage de réunion</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
     <!--end::User -->
 

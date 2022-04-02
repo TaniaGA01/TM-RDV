@@ -77,6 +77,7 @@
 	.aside {
 		width: get($aside-config, width);
 		transition: width get($aside-config, transition-speed) ease;
+		border-radius: 20px 0 0 20px;
 
 		// Logo
 		.aside-logo {

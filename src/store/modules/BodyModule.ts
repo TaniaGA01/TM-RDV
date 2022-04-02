@@ -48,7 +48,7 @@ export default class BodyModule extends VuexModule implements StoreInfo {
 
   @Action
   [Actions.ADD_BODY_CLASSNAME](className) {
-    document.body.classList.add(className);
+    document.body.classList.remove(className); //supprimer class au body
   }
 
   @Action

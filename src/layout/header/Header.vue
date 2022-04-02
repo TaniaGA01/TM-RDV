@@ -3,7 +3,7 @@
   <div
     id="kt_header"
     style=""
-    class="header align-items-stretch bg-white shadow"
+    class="header align-items-stretch bg-white shadow ms-5 me-5"
   >
     <!--begin::Container-->
     <div
@@ -11,57 +11,31 @@
         'container-fluid': headerWidthFluid,
         'container-xxl': !headerWidthFluid,
       }"
-      class="d-flex align-items-stretch justify-content-between"
+      class="d-flex align-items-stretch"
     >
-      <!--begin::Aside mobile toggle-->
-      <div
-        class="d-flex align-items-center d-lg-none ms-n3 me-1"
-        title="Show aside menu"
-      >
-        <div
-          class="btn btn-icon btn-active-light-primary"
-          id="kt_aside_mobile_toggle"
-        >
-          <span class="svg-icon svg-icon-2x mt-1">
-            <inline-svg src="media/icons/duotune/abstract/abs015.svg" />
-          </span>
-        </div>
-      </div>
-      <!--end::Aside mobile toggle-->
-
-      <!--begin::Mobile logo-->
-      <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-        <a href="#" class="d-lg-none">
-          <img alt="Logo" src="media/logos/logo-2.svg" class="h-30px" />
-        </a>
-      </div>
-      <!--end::Mobile logo-->
-
       <!--begin::Wrapper-->
-      <div
-        class="
-          d-flex
-          align-items-stretch
-          justify-content-between
-          flex-lg-grow-1
-        "
-      >
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSyoCbM-QTywfVUcc3rCj6SEl7eo95zYgzC2uFgr5GQ8vt3m85ESGm0mSO6reh7I-ejw&usqp=CAU"
-          alt=""
-          srcset=""
-        />
-        <!--begin::Navbar-->
-        <div class="d-flex align-items-stretch" id="kt_header_menu_nav">
-          <PrimaryMenu />
-        </div>
-        <!--end::Navbar-->
+      <div class="d-flex justify-content-between w-100">
+        <a href="/">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSyoCbM-QTywfVUcc3rCj6SEl7eo95zYgzC2uFgr5GQ8vt3m85ESGm0mSO6reh7I-ejw&usqp=CAU"
+            alt=""
+            srcset=""
+            class="logo"
+          />
+        </a>
+        <div class="d-flex align-items-stretch">
+          <!--begin::Navbar-->
+          <div class="d-flex align-items-stretch" id="kt_header_menu_nav">
+            <PrimaryMenu />
+          </div>
+          <!--end::Navbar-->
 
-        <!--begin::Topbar-->
-        <div class="d-flex align-items-stretch flex-shrink-0">
-          <Connexion />
+          <!--begin::Connexion-->
+          <div class="d-flex align-items-stretch flex-shrink-0">
+            <Connexion />
+          </div>
+          <!--end::Connexion-->
         </div>
-        <!--end::Topbar-->
       </div>
       <!--end::Wrapper-->
     </div>
@@ -107,5 +81,8 @@ export default defineComponent({
   padding: 1rem 0;
   height: 90px;
   margin-top: 2rem;
+}
+.logo {
+  max-height: 65px;
 }
 </style>
