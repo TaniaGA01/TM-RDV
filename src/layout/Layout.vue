@@ -2,7 +2,7 @@
   <KTLoader v-if="loaderEnabled" :logo="loaderLogo" />
 
   <!-- begin:: Body -->
-  <div class="page d-flex flex-row flex-column-fluid mt-10 ms-5 me-5">
+  <div class="page d-flex flex-row flex-column-fluid mt-10 ms-10 me-5">
     <!-- begin:: Aside Left -->
     <KTAside
       v-if="asideEnabled"
@@ -26,6 +26,13 @@
 
         <!-- begin:: Content Body -->
         <div class="post d-flex flex-column-fluid">
+          <!-- <div
+            id="kt_content_container"
+            :class="{
+              'container-fluid': contentWidthFluid,
+              'container-xxl': !contentWidthFluid,
+            }"
+          > -->
           <div
             id="kt_content_container"
             :class="{

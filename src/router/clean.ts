@@ -18,6 +18,49 @@ const routes: Array<RouteRecordRaw> = [
         name: "dashboard",
         component: () => import("@/views/Dashboard.vue"),
       },
+      {
+        path: "crafted/pages/profile",
+        name: "profile",
+        component: () => import("@/components/page-layouts/Profile.vue"),
+        children: [
+          {
+            path: "overview",
+            name: "profile-overview",
+            component: () =>
+              import("@/views/crafted/pages/profile/Overview.vue"),
+          },
+          {
+            path: "projects",
+            name: "profile-projects",
+            component: () =>
+              import("@/views/crafted/pages/profile/Projects.vue"),
+          },
+          {
+            path: "campaigns",
+            name: "profile-campaigns",
+            component: () =>
+              import("@/views/crafted/pages/profile/Campaigns.vue"),
+          },
+          {
+            path: "documents",
+            name: "profile-documents",
+            component: () =>
+              import("@/views/crafted/pages/profile/Documents.vue"),
+          },
+          {
+            path: "connections",
+            name: "profile-connections",
+            component: () =>
+              import("@/views/crafted/pages/profile/Connections.vue"),
+          },
+          {
+            path: "activity",
+            name: "profile-activity",
+            component: () =>
+              import("@/views/crafted/pages/profile/Activity.vue"),
+          },
+        ],
+      },
     ]
   },
   {

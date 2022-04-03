@@ -2,8 +2,8 @@ const DocMenuConfig = [
   {
     pages: [
       {
-        heading: "dashboard",
-        route: "/dashboard",
+        heading: "Dashboard",
+        route: "/gestion-sondage/dashboard",
         svgIcon: "media/icons/duotune/art/art002.svg",
         fontIcon: "bi-app-indicator",
       },
@@ -17,7 +17,7 @@ const DocMenuConfig = [
   },
   {
     heading: "craft",
-    route: "/crafted",
+    route: "/gestion-sondage/crafted",
     pages: [
       {
         sectionTitle: "pages",
@@ -27,11 +27,11 @@ const DocMenuConfig = [
         sub: [
           {
             sectionTitle: "profile",
-            route: "/profile",
+            route: "/gestion-sondage/profile",
             sub: [
               {
                 heading: "profileOverview",
-                route: "/crafted/pages/profile/overview",
+                route: "/gestion-sondage/crafted/pages/profile/overview",
               },
               {
                 heading: "projects",
