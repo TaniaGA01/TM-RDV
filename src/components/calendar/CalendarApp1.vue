@@ -35,9 +35,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import FullCalendar from "@fullcalendar/vue3";
-import dayGridPlugin from "@fullcalendar/daygrid";
+// import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import listPlugin from "@fullcalendar/list";
+// import listPlugin from "@fullcalendar/list";
 import interactionPlugin from "@fullcalendar/interaction";
 import events from "@/core/data/events";
 import { TODAY } from "@/core/data/events";
@@ -57,12 +57,14 @@ export default defineComponent({
     };
 
     const calendarOptions = {
-      plugins: [dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin],
+      // plugins: [dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin],
+      plugins: [timeGridPlugin, interactionPlugin],
       headerToolbar: {
         left: "prev,next today",
         center: "title",
-        right: "dayGridMonth,timeGridWeek,timeGridDay",
+        right: "timeGridWeek",
       },
+      initialView: "timeGridWeek",
       initialDate: TODAY,
       navLinks: true, // can click day/week names to navigate views
       selectable: true,
@@ -70,7 +72,7 @@ export default defineComponent({
 
       views: {
         dayGridMonth: { buttonText: "month" },
-        timeGridWeek: { buttonText: "week" },
+        timeGridWeek: { buttonText: "semaine" },
         timeGridDay: { buttonText: "day" },
       },
 

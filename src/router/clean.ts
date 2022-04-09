@@ -19,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("@/views/Dashboard.vue"),
       },
       {
+        path: "calendar",
+        name: "calendar",
+        component: () => import("@/views/apps/Calendar.vue"),
+      },
+      {
         path: "crafted/pages/profile",
         name: "profile",
         component: () => import("@/components/page-layouts/Profile.vue"),

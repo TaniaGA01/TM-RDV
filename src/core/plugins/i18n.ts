@@ -278,7 +278,7 @@ const messages = {
     viewSubscription: "購読を見る",
   },
   fr: {
-    dashboard: "Générateur de mise",
+    Dashboard: "Tableau de bord",
     layoutBuilder: "En page",
     craft: "Fabriqué",
     pages: "Pages",
@@ -350,7 +350,7 @@ const messages = {
 
 const i18n = createI18n({
   legacy: false,
-  locale: "en",
+  locale: "fr",
   globalInjection: true,
   messages,
 });
